@@ -1,1 +1,67 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Cory 2020-SD2</title>
+<style>
+.gay{
+  font-size: 24px;
+}
+#div1{
+  background:red
+}
+#div2{
+  background:orange
+}
+#div3{
+  background:yellow
+}
+#div4{
+  background:green
+}
+#div5{
+  background:blue
+}
+#div6{
+  background:purple
+}
+</style>
+</head>
+<body translate="no">
+<div class = "contanier">
+  <div class = "row">
+    <div class = "col">
+      <div> Questions </div>
+    </div>
+    <div class = "col">
+      <div> Counter </div>
+      <div class = "gay" >
+        <div id="div1"> 100 </div>
+        <div id="div2"> 100 </div>
+        <div id="div3"> 100 </div>
+        <div id="div4"> 100 </div>
+        <div id="div5"> 100 </div>
+        <div id="div6"> 100 </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script id="rendered-js">
+console.clear();
+function countDown(evt){
+  for (var i = 1; i<7;i++)
+  {
+    var divN = "#div" + i
+    let counter = $(divN).text();
+    counter = counter - 1;
+    console.log(counter);
+    $(divN).text(counter);
+  }
+
+}
+
+countDown();
+setInterval(countDown,1000);
+</script>
+</body>
+</html>
