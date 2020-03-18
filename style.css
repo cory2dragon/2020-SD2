@@ -1,9 +1,11 @@
 .container{
   color:black
 }
-.col{
-  background:yellow;
+.correct{
+  background:#00cc00
 }
+.incorrect{
+  background:red
 .gay{
   font-size: 24px;
 }
@@ -17,7 +19,7 @@
   background:yellow
 }
 #div4{
-  background:green
+  background:#00cc00
 }
 #div5{
   background:blue
