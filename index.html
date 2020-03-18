@@ -1,32 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
-<title>Cory 2020-SD2</title>
-<style>
-.gay{
-  font-size: 24px;
-}
-#div1{
-  background:red
-}
-#div2{
-  background:orange
-}
-#div3{
-  background:yellow
-}
-#div4{
-  background:green
-}
-#div5{
-  background:blue
-}
-#div6{
-  background:purple
-}
-</style>
+  <meta charset="UTF-8">
+  <title>CodePen - 2020-SD2</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
 </head>
-<body translate="no">
+<body>
+<!-- partial:index.partial.html -->
 <div class = "contanier">
   <div class = "row">
     <div class = "col">
@@ -35,33 +16,18 @@
     <div class = "col">
       <div> Counter </div>
       <div class = "gay" >
-        <div id="div1"> 100 </div>
-        <div id="div2"> 100 </div>
-        <div id="div3"> 100 </div>
-        <div id="div4"> 100 </div>
-        <div id="div5"> 100 </div>
-        <div id="div6"> 100 </div>
+        <div id="div1"> 1</div>
+        <div id="div2"> 1</div>
+        <div id="div3"> 1</div>
+        <div id="div4"> 1</div>
+        <div id="div5"> 1</div>
+        <div id="div6"> 1</div>
       </div>
     </div>
   </div>
 </div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<script id="rendered-js">
-console.clear();
-function countDown(evt){
-  for (var i = 1; i<7;i++)
-  {
-    var divN = "#div" + i
-    let counter = $(divN).text();
-    counter = counter - 1;
-    console.log(counter);
-    $(divN).text(counter);
-  }
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script><script  src="./script.js"></script>
 
-}
-
-countDown();
-setInterval(countDown,1000);
-</script>
 </body>
 </html>
