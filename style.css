@@ -1,8 +1,8 @@
 .container{
-  color:black;
+  color:black
 }
 .correct{
-  background:#00cc00;
+  background:#00cc00
 }
 .incorrect{
   background:red
@@ -11,20 +11,20 @@
   font-size: 24px;
 }
 #div1{
-  background:red;
+  background:red
 }
 #div2{
-  background:orange;
+  background:orange
 }
 #div3{
-  background:yellow;
+  background:yellow
 }
 #div4{
-  background:#00cc00;
+  background:#00cc00
 }
 #div5{
-  background:blue;
+  background:blue
 }
 #div6{
-  background:purple;
+  background:purple
 }
