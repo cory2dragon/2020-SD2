@@ -21,7 +21,7 @@ function onChange(evt) {
       console.log(theScore);
       $("#score").text(theScore);
     console.log("correct");
-  } else {
+  }if (correct != response && response != "") {
     sad.play();
     $(this)
       .removeClass("correct")
