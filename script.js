@@ -18,6 +18,7 @@ function onChange(evt) {
       .addClass("correct");
       let theScore = Number($("#score").text());
       theScore = theScore + 1;
+      console.log(theScore);
       $("#score").text(theScore);
     console.log("correct");
   } else {
