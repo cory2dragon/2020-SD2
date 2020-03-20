@@ -1,3 +1,4 @@
+const sad = document.getElementById("sad");
 function countUp(evt){
   for (var i = 1; i<7;i++)
   {
@@ -21,6 +22,7 @@ function onChange(evt) {
       $("#score").text(theScore);
     console.log("correct");
   } else {
+    sad.play();
     $(this)
       .removeClass("correct")
       .addClass("incorrect");
