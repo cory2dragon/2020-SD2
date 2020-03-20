@@ -4,7 +4,6 @@ function countUp(evt){
     var divN = "#div" + i
     let counter = Number($(divN).text());
     counter = counter + 1;
-    console.log(counter);
     $(divN).text(counter);
   }
 }//end countUp
