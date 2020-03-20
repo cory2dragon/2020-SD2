@@ -6,10 +6,11 @@ function countUp(evt){
     {
       let divN = "#div" + i
       var counter = Number($(divN).text());
+      console.log(counter);
       counter = counter + 1;
       $(divN).text(counter);
     }
-  }D
+  }
   else{
     $("#tTime").text(counter);    
   }
