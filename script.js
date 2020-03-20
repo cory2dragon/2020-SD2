@@ -16,6 +16,9 @@ function onChange(evt) {
     $(this)
       .removeClass("incorrect")
       .addClass("correct");
+      let theScore = Number($("#score").text());
+      theScore = theScore + 1;
+      $("#score").text(theScore);
     console.log("correct");
   } else {
     $(this)
