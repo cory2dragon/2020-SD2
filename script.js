@@ -1,11 +1,12 @@
 const sad = document.getElementById("sad");
 var theScore = 0;
 function countUp(evt){
+  var counter = 1;
   if (theScore != 15){
     for (var i = 1; i<7;i++)
     {
       let divN = "#div" + i
-      var counter = Number($(divN).text());
+      counter = Number($(divN).text());
       console.log(counter);
       counter = counter + 1;
       $(divN).text(counter);
