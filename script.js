@@ -1,11 +1,16 @@
 const sad = document.getElementById("sad");
 function countUp(evt){
-  for (var i = 1; i<7;i++)
-  {
-    var divN = "#div" + i
-    let counter = Number($(divN).text());
-    counter = counter + 1;
-    $(divN).text(counter);
+  if (theScore != 15){
+    for (var i = 1; i<7;i++)
+    {
+      let divN = "#div" + i
+      var counter = Number($(divN).text());
+      counter = counter + 1;
+      $(divN).text(counter);
+    }
+  }
+  else{
+    $("#tTime").text(counter);    
   }
 }//end countUp
 function onChange(evt) {
@@ -16,7 +21,7 @@ function onChange(evt) {
     $(this)
       .removeClass("incorrect")
       .addClass("correct");
-      let theScore = Number($("#score").text());
+      var theScore = Number($("#score").text());
       theScore = theScore + 1;
       console.log(theScore);
       $("#score").text(theScore);
