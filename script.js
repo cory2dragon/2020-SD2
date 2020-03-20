@@ -1,7 +1,7 @@
 const sad = document.getElementById("sad");
 var theScore = 0;
+var counter = 1;
 function countUp(evt){
-  var counter = 1;
   if (theScore != 15){
     for (var i = 1; i<7;i++)
     {
