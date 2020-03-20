@@ -23,6 +23,9 @@ function onChange(evt) {
     console.log("correct");
   }if (correct != response && response != "") {
     sad.play();
+    let errorN = Number($("#error").text());
+    errorN = errorN + 1;
+    $("#error").text(errorN);
     $(this)
       .removeClass("correct")
       .addClass("incorrect");
